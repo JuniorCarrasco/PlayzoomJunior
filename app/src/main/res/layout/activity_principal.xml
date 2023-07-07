@@ -16,8 +16,9 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/tb_playzoom"
             android:elevation="8dp"
-            app:titleTextColor="@color/white"
 
+            app:title="Bienvenido Junior"
+            app:titleTextColor="@color/white"
             android:background="?attr/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

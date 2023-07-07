@@ -15,6 +15,7 @@ public class PrincipalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         binding = ActivityPrincipalBinding.inflate(getLayoutInflater());//BINDING
         setContentView(binding.getRoot());//BINDING
@@ -22,7 +23,6 @@ public class PrincipalActivity extends AppCompatActivity {
         binding.fabAddMovie.setOnClickListener(v -> {
             Snackbar.make(binding.getRoot(),"Add a movie",Snackbar.LENGTH_SHORT).show();
         });
-        binding.tbPlayzoom.setTitle("Hola mundo");
         setSupportActionBar(binding.tbPlayzoom);
 
     }
