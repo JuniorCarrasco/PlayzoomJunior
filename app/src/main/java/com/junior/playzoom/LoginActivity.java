@@ -2,6 +2,7 @@ package com.junior.playzoom;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -21,7 +22,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(binding.getRoot()); //BINDING
 
         binding.btnLogin.setOnClickListener(v -> {
-            Toast.makeText(this,"Datos correctos...", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this,"Datos correctos...", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, PrincipalActivity.class);
+            startActivity(intent);
         });
         binding.titleEmail.getEditText().addTextChangedListener(new TextWatcher() {
             @Override
