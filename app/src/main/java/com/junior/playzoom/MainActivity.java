@@ -3,11 +3,11 @@ package com.junior.playzoom;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.junior.playzoom.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.btnGetStarted.setOnClickListener(v -> {
-            Toast.makeText(this, "Presiono el boton", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "Presiono el boton", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this,LoginActivity.class);
+            startActivity(intent);
         });
         binding.txtMoviewPhrase.setText("Mira tu pelicula \nfavorita.");
         binding.btnGetStarted.setText("Presiona boton");
