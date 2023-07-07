@@ -13,6 +13,10 @@
         android:id="@+id/guideline_vertical_medium"
         app:layout_constraintGuide_percent="0.3"
         />
+
+
+
+
     <ImageView
         android:id="@+id/img_jovenes"
         android:layout_width="0dp"

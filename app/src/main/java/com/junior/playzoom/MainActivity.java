@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         });
         binding.txtMoviewPhrase.setText("Mira tu pelicula \nfavorita.");
         binding.btnGetStarted.setText("Presiona boton");
-        
+
         //setContentView(R.layout.activity_main);
 
         // btnGetStarted = findViewById(R.id.btn_get_started);
