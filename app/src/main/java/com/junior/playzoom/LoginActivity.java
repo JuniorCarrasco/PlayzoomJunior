@@ -17,7 +17,10 @@ public class LoginActivity extends AppCompatActivity {
     private ActivityLoginBinding binding; //BINDING
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Base_Theme);
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
         binding = ActivityLoginBinding.inflate(getLayoutInflater()); //BINDING
         setContentView(binding.getRoot()); //BINDING
 
@@ -25,7 +28,6 @@ public class LoginActivity extends AppCompatActivity {
             //Toast.makeText(this,"Datos correctos...", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, PrincipalActivity.class);
             startActivity(intent);
-            finish(); //Para no dar atras
         });
         binding.titleEmail.getEditText().addTextChangedListener(new TextWatcher() {
             @Override
@@ -60,7 +62,9 @@ public class LoginActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
 
             }
+
         });
+
     }
 
     private Boolean isCredentialsValidate(String email, String password){

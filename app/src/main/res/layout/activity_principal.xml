@@ -5,8 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PrincipalActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/apl_playzoom"
+        android:layout_width="match_parent"
+        app:elevation="16dp"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_playzoom"
+            android:elevation="8dp"
+            app:titleTextColor="@color/white"
+
+            android:background="?attr/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         app:fabSize="normal"
+        android:id="@+id/fab_add_movie"
         android:contentDescription="@null"
         android:src="@drawable/ic_add_movie"
         android:layout_gravity="bottom|end"

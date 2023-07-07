@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.junior.playzoom.databinding.ActivityPrincipalBinding;
 
 public class PrincipalActivity extends AppCompatActivity {
@@ -16,5 +18,12 @@ public class PrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityPrincipalBinding.inflate(getLayoutInflater());//BINDING
         setContentView(binding.getRoot());//BINDING
+
+        binding.fabAddMovie.setOnClickListener(v -> {
+            Snackbar.make(binding.getRoot(),"Add a movie",Snackbar.LENGTH_SHORT).show();
+        });
+        binding.tbPlayzoom.setTitle("Hola mundo");
+        setSupportActionBar(binding.tbPlayzoom);
+
     }
 }
