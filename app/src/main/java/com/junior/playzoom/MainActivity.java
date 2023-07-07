@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             //Toast.makeText(this, "Presiono el boton", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this,LoginActivity.class);
             startActivity(intent);
+            finish(); //Para no dar atras
         });
         binding.txtMoviewPhrase.setText("Mira tu pelicula \nfavorita.");
         binding.btnGetStarted.setText("Presiona boton");
